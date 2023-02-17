@@ -1,0 +1,40 @@
+.carousel-links {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.carousel-links .carousel-dot {
+    background-color: var(--blue);
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    margin-top: 5px;
+    display: block;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .carousel-videos {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;  /*La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas  */
+    flex-direction: column;
+    overflow: hidden; /* Oculta el contenido que se sale de los contenedores*/
+    scroll-behavior: smooth;
+  }
+
+  .carousel-videos > div {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+  }
+
+  .carousel-videos > div > iframe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*margin: auto;*/ /* da margen igual a cada lado centrando los elementos */
+    display: block; /* Hace que podamos aplicar propiedades como margin */
+  }

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthas</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/root.css">
+    <link rel="stylesheet" href="CSS/headerNavbar.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/separadores.css">
+    <link rel="stylesheet" href="CSS/skills.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+</head>
+
+<body class = "body">
+   <!-- NAVBAR -->
+  <nav class="navDesktop">
+    <!-- Desktop Menu -->
+    <div class="titulo1"> 
+      <a href="index.html" class="a">
+          Arthas
+      </a>
+    </div>
+
+    <div class="menuDesktop">
+      <ul class= "menuItemDesktop">
+        <li>
+          <a href="#historia" class="a">Mi historia</a>
+        </li>
+        <li>
+          <a href="#skills" class="a">Skills</a>
+        </li>
+        <li>
+          <a href="#proyectos" class="a">Proyectos</a>
+        </li>
+        <li>
+          <a href="#contacto" class="a">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+    <!-- Menu Mobile-->
+  <div class="menuMobile">
+    <a href="index.html">Arthas</a>
+    <!-- Hamburger icon Y ICON X, hidden checkbox -->
+    <input type="checkbox" id="sideMenu"/>
+    <label id="hamb" class="hamb" for="sideMenu">
+      <span class="hamb-line">&#9776;</span>
+      <span id="menuCerrar">X</span>
+    </label> 
+    <!-- Menu Mobile NAV-->
+    <nav class="nav" id="nav">
+      <ul class="menu" id="menu">
+        <li><a href="#historia">Mi historia</a></li>
+        <li><a href="#skills">Skills</a> </li>
+        <li><a href="#proyectos">Proyectos</a> </li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- FIN NAVBAR -->
+
+  <!-- El Header -->
+  <header class="header">
+    <div class="backGroundImage">
+      <!--Dynamic Images de Arthas em el header-->
+      <picture class="img-container">  
+        <source
+            media="(max-width: 2180px)"
+            srcset="
+            images/header/Arthas_Header.jpeg 2180w,
+            images/header/Arthas_Header1440x.jpeg 1400w,
+            images/header/Arthas_Header1080x.jpeg 1080w,
+            images/header/Arthas_Header768x.jpeg 768w,
+            images/header/Arthas_Header518x.jpeg 518w,
+            images/header/Arthas_Header400x.jpeg 400w,
+            images/header/Arthas_Header360x.jpeg 360w
+            "
+          >
+          <img src="images/header/Arthas_Header.jpeg">
+      </picture>
+    </div>
+  </header>
+
+  <!-- FIN HEADER -->
+
+  <!-- Separan cada sección los de class separadores -->
+  <!-- CAROUSEL -->
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <div class="separadores" id="historia">
+    <span>Mi Historia</span>
+  </div> 
+
+  <section class="carousel">
+    
+    <div class="carousel-videos">
+      <div id="video1"><iframe width="50%" height="100%" src="https://www.youtube-nocookie.com/embed/nXoVC3tMeBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div id="video2"><iframe width="50%" height="100%" src="https://www.youtube-nocookie.com/embed/Liv05fzN-z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div id="video3"><iframe width="50%" height="100%" src="https://www.youtube-nocookie.com/embed/GTGUauJ9kqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
+    
+    
+    <div class="carousel-links">
+      <a href="#video1" class="carousel-dot"></a>
+      <a href="#video2" class="carousel-dot"></a>
+      <a href="#video3" class="carousel-dot"></a>
+    </div>
+</section>
+
+<!-- FIN CAROUSEL -->
+
+<div class="separadores">
+  <span>Mis Skills</span>
+</div> 
+
+<!-- Barras de progreso animadas -->
+
+<div class="Arthas">
+  <p>Arthas Menethil, Príncipe Heredero de Lordaeron nació de Lianne Menethil y el Rey Terenas Menethil II, cuatro años antes de comenzar la Primera Guerra. El joven príncipe creció en un tiempo en el que las tierras de Azeroth eran devastadas por la guerra (sobre todo con los Orcos) y la Alianza se desvanecía en un horizonte de nubes negras. En su infancia fue amigo de Varian Wrynn.</p>
+  <br>
+  <p>Despues Arthas tiene un sueño donde mata lo que quedaba de bondad en él y acto seguido atraviesa a Ner'zhul con la Frostmourne, entonces Arthas se convierte en el Rey Lich.</p>
+</div>
+
+<div class="skill-container">
+  <div class="skill">
+      <span>Frost</span>
+    <div class="pbar-container">
+      <div class="progressBar animate-progress-bar w-100"></div>
+    </div>
+  </div>
+  <div class="skill">
+      <span>Fire</span>
+    <div class="pbar-container">
+      <div class="progressBar animate-progress-bar w-25"></div>
+    </div>
+  </div>
+  <div class="skill">
+      <span>Shadow</span>
+    <div class="pbar-container" id="skills">
+      <div class="progressBar animate-progress-bar w-75"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--FIN Barras de progreso animadas -->
+
+<!-- Formulario -->
+
+<div class="separadores">
+  <span>Contacto</span>
+</div> 
+
+<form class="formContainer" action="/contact" method="post">
+  <div class="textForm">
+    <div class="formArthas">
+      <span><label class="textLabel" for="name">Nombre</label>
+      <input required type="text" id="name" name="name" placeholder="Introduce tu nombre"></span>
+    </div>
+    <div class="formArthas">
+      <span><label class="textLabel" for="surname">Apellido</label>
+      <input placeholder="Introduce tu apellido" required type="text" name="text" id="surname"></span>
+    </div>
+    <div class="formArthas">
+      <span><label class="textLabel" for="phone">Teléfono</label>
+      <input
+        required
+        placeholder="Introduce tu número de teléfono"
+        id="phone"
+        type="tel"
+        name="phone"
+        pattern="[0-9]+"
+      ></span>
+    </div>
+    <div class="formArthas">
+      <span><label class="textLabel" for="github">Github</label>
+      <input
+        required
+        id="github"
+        type="text"
+        name="github"
+        pattern="^@[^\s]+"
+        placeholder="Formato: (@<username>)"
+      ></span>
+    </div>
+  </div>
+
+
+  <div class="formArthas" id="contacto">
+    <p class="textLabel">¿Cómo me conociste?</p>
+    <br>
+    <div class="checkBoxes">
+      <span><label for="university">Universidad</label>
+      <input required type="radio" name="contact" id="university" value="university">
+      </span>
+    </div>
+    <div class="checkBoxes">
+      <span><label for="keepcoding">Keepcoding kick-off</label>
+      <input required type="radio" name="contact" id="keepcoding" value="keepcoding">
+      </span>
+    </div>
+    <div class="checkBoxes">
+      <span><label for="school">Colegio</label>
+      <input required type="radio" name="contact" id="school" value="school">
+      </span>
+    </div>
+    <div class="checkBoxes">
+      <label for="github">Github</label>
+      <input required type="radio" name="contact" id="github" value="github">
+    </div>
+  </div>
+
+  <div class="formArthas">
+    <label class="textLabel" for="moreInfo">Más información</label>
+    <br>
+    <textarea required name="moreInfo" id="moreInfo" maxlength="180" placeholder="Escribe aquí" cols="30" rows="10"></textarea>
+  </div>
+  <div class="formArthas">
+    <button class="buttonArthas" type="submit">Enviar</button>
+  </div>
+</form>
+
+<!-- FIN Formulario -->
+
+<!-- GRID DE PROYECTOS -->
+
+<div class="separadores" id="proyectos">
+  <span>Proyectos</span>
+</div> 
+
+<section class="projects">
+    
+  <div class="imageContainer"><img src="/images/grid/wow.webp"></div>
+  <div class="imageContainer"><img src="/images/grid/warcraft.jpg"></div>
+
+</section>
+
+<!-- FIN GRID DE PROYECTOS -->
+
+<!-- Footer -->
+
+<footer>
+  <div class="socialMedia">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/iconos/instagram.jpg">
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/iconos/facebook.jpg">
+    </a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+      <img src="images/iconos/twitter.jpg">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

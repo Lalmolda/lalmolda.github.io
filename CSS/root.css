@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
+:root{
+  --white: rgb(255,255,255);
+  --blue: rgb(27, 48, 78);
+  --light-blue: rgb(55, 74, 103);
+  --background: #16120F;
+  --black: #171310;
+  --gray: #85888C;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+  font-size: 100%;
+}
+
+body{
+  margin-top: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:12px;
+  letter-spacing: normal;
+  background-color: white;
+  position:relative;
+}

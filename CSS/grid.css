@@ -1,0 +1,19 @@
+.projects {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15vh 15vh;
+    grid-template-rows:  15vh;
+    background-color: var(--blue);
+    grid-template-areas:
+    "div div"
+    ;
+  }
+
+  .imageContainer{
+    border:1px solid var(--white);
+  }
+  
+  .imageContainer img{
+    width: 100%;
+    height: 100%;
+  }
